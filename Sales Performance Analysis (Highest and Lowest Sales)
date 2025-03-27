@@ -1,0 +1,12 @@
+#1. Sales Performance Analysis (Highest and Lowest Sales) 
+(
+ A company records monthly sales in an array: [5000, 7000, 8000, 6500, 7200, 
+9000, 8500]. Find and print the highest and lowest sales values. )
+
+import numpy as np
+
+a = np.array([5000, 7000, 8000, 6500, 7200, 9000, 8500])
+print("Sales Data:", a)
+
+print("Lowest Sales:", a.min())
+print("Highest Sales:", a.max())
