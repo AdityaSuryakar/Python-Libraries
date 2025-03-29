@@ -1,0 +1,13 @@
+#5. Find the Most Frequent Element in an Array 
+(Given a NumPy array [1, 2, 2, 3, 3, 3, 4, 4, 4, 4], determine which element 
+appears the most times. )
+
+import numpy as np
+from collections import Counter
+
+arr = np.array([1, 2, 2, 3, 3, 3, 4, 4, 4, 4,4])
+counts = Counter(arr)
+most_frequent = counts.most_common()  
+
+print("Most Frequent Element:", most_frequent[0][0])
+print("Number of Occurrences:", most_frequent[0][1])
