@@ -1,0 +1,15 @@
+#3. Calculate Total Revenue from Products Sold
+(A store sells 4 types of products. The quantity sold and the price per unit are stored as 
+NumPy arrays: 
+quantities = np.array([10, 15, 7, 20])  # Number of units sold 
+prices = np.array([50, 40, 100, 30])    
+# Price per unit)
+
+
+import numpy as np
+
+quantities = np.array([10,15,7,20])
+prices = np.array([50,40,100,30])
+
+total_revenue = np.dot(quantities, prices)
+print("Total Revenue :", total_revenue)
