@@ -1,0 +1,7 @@
+#8. Find the Number of Users by Gender
+(How many male and female users are present in the dataset?)
+
+import numpy as np
+
+df=pd.read_csv('Downloads/Social_Network_Ads.csv')
+df['Gender'].value_counts()
