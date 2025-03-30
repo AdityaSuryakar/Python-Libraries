@@ -1,0 +1,15 @@
+#7.Load the dataset and display basic information
+(You are given the Social_Network_Ads.csv dataset. Load it into a Pandas DataFrame 
+and display the first 5 rows along with dataset summary information. 
+Dataset => Social_Network_Ads.csv 
+https://mitu.co.in)
+
+import pandas as pd
+df = pd.read_csv('Downloads/Social_Network_Ads.csv')
+# Display the first 5 rows
+print("First 5 rows of the dataset:")
+print(df.head(5))
+
+# Display summary information
+print("\nDataset summary information:")
+print(df.info())
