@@ -1,0 +1,12 @@
+#6. Normalize an Array (Scaling Values Between 0 and 1)
+( You have an array of exam scores: [50, 80, 90, 60, 75, 85]. Normalize them 
+between 0 and 1 using Min-Max Scaling.)
+
+import numpy as np
+
+scores = np.array([50, 80, 90, 60, 75, 85])
+
+# Min-Max normalization formula: (value - min) / (max - min)
+normalized_scores = (scores - scores.min()) / (scores.max() - scores.min())
+
+print("Normalized Scores:", normalized_scores)
